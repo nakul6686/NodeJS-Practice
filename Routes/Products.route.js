@@ -7,7 +7,7 @@ router.get("/", verifyAccessToken, (req, res) => {
   try {
     res
       .status(200)
-      .json({ message: "Access to products granted", reqayload: req.payload });
+      .json({ message: "Access to products granted, successfully accessed", reqayload: req.payload });
   } catch (error) {
     next(error);
   }
